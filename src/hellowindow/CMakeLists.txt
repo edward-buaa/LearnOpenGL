@@ -4,7 +4,13 @@ project(HelloWindow)
 #搜索对应的头文件 并存储在 HEADER_FILES变量中
 file(GLOB HEADER_FILES ./*.h)
 #搜索对应的CPP文件 并存储在 SRC_FILES_FILES变量中
-file(GLOB_RECURSE SRC_FILES ./*.cpp)
+file(GLOB_RECURSE SRC_FILES ./*.cpp ../../3rdParty/glad/src/*.c)
+
+include_directories(../../3rdParty/glad/include)
+#file(GLOB_RECURSE SRC_FILES ../../3rdParty/glad/src/*.c)
+
+include_directories(../../3rdParty/glfw-3.3.8/include)
+#find_library(GLFW )
 
 #将之前找到的文件导入到项目中，指定生成的文件类型 (.exe)
 add_executable (${PROJECT_NAME} ${HEADER_FILES} ${SRC_FILES})
