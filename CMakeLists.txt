@@ -7,5 +7,5 @@ project(LearnOpenGL)
 #添加子目录
 # - 参数1 是用来指定需要索引的源文件目录 
 # - 参数2 用来指定项目的名称
-add_subdirectory(src/helloWindow HelloWindow)
-#add_subdirectory(Server MyServer)
+add_subdirectory(src/helloWindow)
+add_subdirectory(src/helloTriangle)
