@@ -20,4 +20,4 @@ link_directories(../../3rdParty/glfw-3.3.8/lib/Release)
 add_executable (${PROJECT_NAME} ${HEADER_FILES} ${SRC_FILES})
 
 #链接库
-target_link_libraries(${PROJECT_NAME} glfw3)
+target_link_libraries(${PROJECT_NAME} glfw3 opengl32)
