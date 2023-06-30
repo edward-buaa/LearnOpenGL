@@ -9,3 +9,4 @@ project(LearnOpenGL)
 # - 参数2 用来指定项目的名称
 add_subdirectory(src/helloWindow)
 add_subdirectory(src/helloTriangle)
+add_subdirectory(src/shaders)
