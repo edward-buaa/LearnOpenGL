@@ -4,7 +4,9 @@ project(Transformations)
 #glad glfw 包含路径
 set(GLAD_PATH ../../3rdParty/glad/include)
 set(GLFW_PATH ../../3rdParty/glfw-3.3.8/include)
-include_directories(${GLAD_PATH} ${GLFW_PATH})
+set(IMAGE_PATH ../../3rdParty/stb_image)
+set(GLM_PATH ../../3rdParty/glm)
+include_directories(${GLAD_PATH} ${GLFW_PATH} ${IMAGE_PATH} ${GLM_PATH})
 
 #搜索对应的头文件 并存储在 HEADER_FILES变量中
 file(GLOB HEADER_FILES ./*.h ${GLFW_PATH}/GLFW/glfw3.h ${GLAD_PATH}/glad/glad.h)
